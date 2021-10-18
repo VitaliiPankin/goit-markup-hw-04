@@ -18,7 +18,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 a {
-  display: inline-flex;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -135,6 +134,7 @@ p {
   padding-bottom: 25px;
 }
 .header-link {
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -370,10 +370,40 @@ p {
 }
 
 .command-paragraph {
+  padding-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+}
+.social-network-link {
+  height: 44px;
+  width: 44px;
+  display: inline-flex;
+  background-color: var(--background-color);
+  background-position: center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.social-network-link:nth-child(1) {
+  background-image: url(../images/icons/instagram.svg);
+}
+.social-network-link:nth-child(2) {
+  background-image: url(../images/icons/twitter.svg);
+}
+.social-network-link:nth-child(3) {
+  background-image: url(../images/icons/facebook.svg);
+}
+.social-network-link:nth-child(4) {
+  background-image: url(../images/icons/linkedin.svg);
+}
+.social-network-link:focus,
+.social-network-link:hover {
+  background-color: var(--acsent-color);
+}
+.social-network-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* ------------PORTFOLIO----------- */
@@ -396,6 +426,10 @@ p {
 .portfolio-contant-list {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.portfolio-contant-list:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-contant-list:nth-last-child(-n + 3) {
   margin-bottom: 0;
