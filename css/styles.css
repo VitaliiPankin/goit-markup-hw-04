@@ -18,6 +18,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 a {
+  display: inline-flex;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -134,15 +135,35 @@ p {
   padding-bottom: 25px;
 }
 .header-link {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .header-link-nav:not(:last-child) {
   margin-right: 50px;
 }
 .header-link-contacts:not(:last-child) {
   margin-right: 50px;
+}
+.icon-maile {
+  content: "";
+  width: 16px;
+
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: url(../images/icons/envelope.svg);
+}
+.icon-tell {
+  content: "";
+  width: 10px;
+
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: url(../images/icons/smartphone.svg);
 }
 
 /* -------------BUTTONs-------------- */
@@ -240,6 +261,29 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+.peculiarities-link::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--third-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.peculiarities-link:nth-child(1)::before {
+  background-image: url(../images/icons/antenna.svg);
+}
+.peculiarities-link:nth-child(2)::before {
+  background-image: url(../images/icons/clock.svg);
+}
+.peculiarities-link:nth-child(3)::before {
+  background-image: url(../images/icons/diagram.svg);
+}
+.peculiarities-link:nth-child(4)::before {
+  background-image: url(../images/icons/astronaut.svg);
 }
 .peculiarities-paragraph {
   font-weight: 400;
@@ -382,7 +426,7 @@ footer {
 .logo-color-studio-footer {
   color: var(--logo-color-studio-footer);
 }
-..footer-address-link {
+.footer-address-link {
   display: block;
 }
 .footer-address-link:not(:last-child) {
