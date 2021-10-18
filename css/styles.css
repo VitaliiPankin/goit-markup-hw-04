@@ -470,7 +470,6 @@ p {
 }
 
 .clients-link {
-  display: block;
   justify-self: start;
   display: inline-flex;
   width: 166px;
