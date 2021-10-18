@@ -155,6 +155,7 @@ p {
 
   background-image: url(../images/icons/envelope.svg);
 }
+
 .icon-tell {
   content: "";
   width: 10px;
@@ -223,6 +224,22 @@ p {
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--secondary-background-color);
+}
+.hero-bgpfoto {
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bagraund-foto.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero-text {
   margin-bottom: 40px;
