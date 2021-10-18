@@ -456,7 +456,56 @@ p {
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
 }
+/* ----------CLIENT----------- */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+}
 
+.clients-link {
+  display: block;
+  justify-self: start;
+  display: inline-flex;
+  width: 166px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-position: center;
+  background-size: 106px;
+  background-repeat: no-repeat;
+}
+.clients-link:nth-child(1) {
+  background-image: url(../images/icons/logo-client1.svg);
+}
+.clients-link:nth-child(2) {
+  background-image: url(../images/icons/logo-client1.svg);
+}
+.clients-link:nth-child(3) {
+  background-image: url(../images/icons/logo-client1.svg);
+}
+.clients-link:nth-child(4) {
+  background-image: url(../images/icons/logo-client1.svg);
+}
+.clients-link:nth-child(5) {
+  background-image: url(../images/icons/logo-client1.svg);
+}
+.clients-link:nth-child(6) {
+  background-image: url(../images/icons/logo-client1.svg);
+}
+.clients-link:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  background-color: var(--acsent-color);
+}
 /* -------------FOOTER------------ */
 footer {
   background-color: var(--secondary-background-color);
