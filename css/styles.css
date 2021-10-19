@@ -360,7 +360,8 @@ p {
   border-radius: 50%;
   fill: #afb1b8;
 }
-.command-network-link:hover {
+.command-network-link:hover,
+.command-network-link:focus {
   background-color: var(--acsent-color);
   fill: var(--logo-color-studio-footer);
 }
@@ -442,7 +443,8 @@ p {
   border-radius: 4px;
   fill: #afb1b8;
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--acsent-color);
   fill: var(--acsent-color);
 }
@@ -524,9 +526,11 @@ footer {
   border-radius: 50%;
   fill: var(--background-color);
 }
-.fotter-network-link:hover {
+.fotter-network-link:hover,
+.fotter-network-link:focus {
   background-color: var(--acsent-color);
 }
+
 .fotter-network-link:not(:last-child) {
   margin-right: 10px;
 }
