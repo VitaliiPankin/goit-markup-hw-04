@@ -526,7 +526,6 @@ footer {
 }
 .fotter-network-link:hover {
   background-color: var(--acsent-color);
-  fill: var(--logo-color-studio-footer);
 }
 .fotter-network-link:not(:last-child) {
   margin-right: 10px;
