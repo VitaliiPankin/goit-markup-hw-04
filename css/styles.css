@@ -137,6 +137,7 @@ p {
 }
 .header-link {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -150,6 +151,7 @@ p {
   margin-right: 50px;
 }
 .icon-maile {
+  display: flex;
   margin-right: 10px;
 }
 
@@ -165,6 +167,7 @@ p {
 .button:hover,
 .button:focus {
   background-color: var(--button-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-text {
@@ -195,6 +198,8 @@ p {
 .buttons-secondary:focus {
   color: var(--background-color);
   background-color: var(--color-logo);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons-secondary-text {
@@ -266,12 +271,14 @@ p {
   color: var(--title-text-color);
 }
 .peculiarities-svg {
-  max-height: 120px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--third-background-color);
-  display: block;
   border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 
 .peculiarities-paragraph {
@@ -390,7 +397,8 @@ p {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-contant-list:hover {
+.portfolio-contant-list:hover,
+.portfolio-contant-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
