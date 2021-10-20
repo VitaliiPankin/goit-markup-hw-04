@@ -349,7 +349,7 @@ p {
 }
 
 .command-paragraph {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -357,23 +357,26 @@ p {
 }
 .command-block-network {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
+  align-items: center;
 }
 .command-network-link {
-  max-width: 44px;
-  max-height: 44px;
-  padding: 12px 12px;
-
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
   fill: #afb1b8;
+  border-radius: 50%;
 }
+
 .command-network-link:hover,
 .command-network-link:focus {
   background-color: var(--acsent-color);
   fill: var(--logo-color-studio-footer);
 }
-.command-network-link:not(:last-child) {
+
+.command-network-link:not(last-child) {
   margin-right: 10px;
 }
 /* ------------PORTFOLIO----------- */
